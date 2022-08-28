@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+      
+            *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+        }
+        body
+    {
+       
+        text-align: center;
+    
+      background-image: url('https://user-images.githubusercontent.com/112194107/187047826-bb6d7635-e044-468c-9a73-94597ff1798f.jpg');
+    
+    }
+    
+ 
+
+
+.card-container img
+{
+    width: 20rem ;
+    
+}
+
+.card-container
+{
+    display: grid;
+   grid-template-columns: 1fr;
+   justify-content:center ;
+}
+
+.cards-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card
+{
+    margin:1rem ;
+    perspective: 1000px;
+}
+  
+   
+h2{
+      display: flex;
+      font-size: 7vh;
+      color: rgb(50, 20, 1);
+      -webkit-text-stroke:0.3vw rgb(82, 62, 49);;
+     
+    }
+    h2::before{
+        
+      content:attr(data-text);
+      
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: rgb(255, 198, 85);
+      -webkit-text-stroke: 0vw rgb(50, 20, 1) ;
+     overflow:hidden;
+     animation: animate 9s linear infinite;
+      border-right: 2px solid rgb(50, 20, 1);
+    }
+    @keyframes animate
+    {
+      0%, 10%,100%{
+        width: 0;
+      }
+    
+      70%, 90%
+      {
+        width:15%;
+      }
+    }
+    
+
+
+    </style>
+
+
+  <div class="h2">
+     <h2 data-text="Cardápio"> Cardápio</h2>
+  </div>
+
+<section class="cards-section">
+    <div class="card">
+    <div class="card-container">
+        <div class="card-front">
+
+            <figure><a href="https://github.com/CorporationCods/test-test/files/9440133/Cardapio.pdf"> <img src="https://user-images.githubusercontent.com/112194107/187046904-c6cffcad-fd22-45f8-96b7-cecb27479db3.jpg" alt="cardapio" "></a></figure>
+        
+        </div>
+  
+        </div>
+    </div>
+  </section>
+</body>
+</html>
